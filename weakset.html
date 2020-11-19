@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WeakSet</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let visitedSet = new weakSeet();
+
+	let john =  { name: "John" };
+	let pete = { name: "Pete" };
+	let mary = { name: "Mary" };
+
+	visitedSet.add(john); // John visited us
+	visitedSet.add(pete); // Then pete
+	visitedSet.add(john); //john again
+
+	//visitedSet has 2 users now
+
+	//check if john visited?
+	alert(visitedSet.has(john)); //true
+
+	//check if MAry visited?
+	alert(visitedSet.has(mary)); //false
+
+	john=null;
+	//visitedSet will br automatically
+</script>
+</body>
+</html>

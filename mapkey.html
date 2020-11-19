@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map Key</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let map = new Map();
+	map.set('1', 'str1');
+	map.set(1, 'num1');
+	map.set(true,'bool1');
+
+	//remember the regular object? it would convert keys to string
+	//Map keeps the type, so these two are different:
+	alert( map.get(1) );
+	alert( map.get('1') );
+	alert( map.size);
+</script>
+</body>
+</html>

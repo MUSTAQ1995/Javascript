@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is not Bound to anything</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let user = { name: "John" };
+	let admin = { name: "Mustaq" };
+
+	function sayHi() {
+		alert( this.name );
+	};
+	//usw the same function intwo objects.
+	user.f = sayHi;
+	admin.f = sayHi;
+
+	//these calls have different "this";
+	//"this" inside the function is the object "before the dot".
+	user.f(); //John ( this == user)
+	admin.f(); //Admin (this == Mustaq)
+
+	admin['f'](); //Admin (dot or square brackets access the method-doesn't matter)
+</script>
+</body>
+</html>

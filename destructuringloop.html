@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ddestructuring Loop</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let user = {
+		name: "JOhn",
+		age: 30
+	};
+	// loop over keys-and-values
+	for (let [key, value] of object.entries(user)) {
+		alert(`${key}:${value}`); //name:john, then age:30.
+	}
+</script>
+</body>
+</html>

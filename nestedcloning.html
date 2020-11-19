@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested Cloning</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let user = {
+		name: "john",
+		sizes: {
+			height: 182,
+			width:50
+		}
+	};
+
+	let clone = Object.assign({},user);
+
+	alert( user.sizes === clone.sizes );
+	//user and clone share sizes
+	user.sizes.width++;
+	alert(clone.sizes.width); 
+</script>
+</body>
+</html>

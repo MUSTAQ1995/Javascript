@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rest Parameters</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	function sumAll(...args) {
+		let sum = 0;
+		for (let arg of args) sum += arg;
+			return sum;
+	}
+
+	alert( sumAll(1) );
+	alert( sumAll(1, 2) );
+	alert( sumAll(1, 2, 2))
+</script>
+</body>
+</html>

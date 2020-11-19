@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iteration Over Map</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let recipeMap = new Map([
+           ['cucumber', 500],
+           ['tomatoes', 350],
+           ['onion', 50]
+		]);
+
+	//iterate over keys (vegetables)
+	for (let vegetables of recipeMap.keys()) {
+		alert(vegetables);
+	}
+	// iterate over values (amounts)
+	for (let amount of recipeMap.values()) {
+		alert(amount);
+	}
+	//iterate over [key,value] entries
+	for (let entry of recipeMap) {
+		alert(entry);
+	}
+</script>
+</body>
+</html>

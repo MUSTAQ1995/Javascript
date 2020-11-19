@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rounding of Numbers</title>
+</head>
+<body>
+	<!-- 
+	MAth.floor:
+	Rounds down:3.1 becomes 3, and -1.1 becomes -2.
+	
+    Math.ceil:
+    Rounds up:3.1 becomes 4, and -1.1 becomes -1.
+
+    Math.round:
+    Rounds to the nearest integer:3.1 becomes 3, 3.6 becomes 4 and -1.1 becomes 1.
+
+    Math.trunc:
+    Removes anything after the decimal point without rounding: 3.1 becomes 3, -1.1 becomes -1.	 
+    	 -->
+<script type="text/javascript">
+	'use strict';
+   let num =12.34;
+   alert( num.toFixed(1) ); // "12.3".
+
+   let num1 = 12.36;
+   alert( num1.toFixed(1) ); // "12.4".
+
+   let num2 = 12.35;
+   alert( num2.toFixed(1) ); // "12.3"
+
+   let num3 = 12.35;
+   alert( num3.toFixed(5) ); //Extra zeroes will added to the result=12.35000
+</script>
+</body>
+</html>

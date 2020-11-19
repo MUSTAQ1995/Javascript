@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nullish Coalesing Operator</title>
+</head>
+<body>
+	<!-- the Nullish Coalescing Operator is defined when its neither null nor undefined,which is written as two question marks ??
+	The result of a??b is:
+	if a is defined,then a,
+	if a isn,t defined,then b. -->
+<script type="text/javascript">
+	'use strict';
+	let user;
+    alert(user??"Anonymous");
+    let firstName = null;
+    let lastName = null;
+    let nickName = "SuperNatural";
+    alert(firstName??lastName??nickName??"Anonymous");
+</script>
+</body>
+</html>

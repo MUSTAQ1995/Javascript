@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON stringfy</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let student = {
+		name: 'Mustaq',
+		age: 25,
+		isAdmin: false,
+		courses:['html', 'css', 'js'],
+		wife: null
+	};
+
+	let json = JSON.stringify(student);
+
+	alert(typeof json); // we've got a string!
+	alert(json);
+	/*JSON-encoded object:
+      {
+            "name": "Mustaq",
+            "age": 30,
+            "isAdmin": false,
+            "courses": ["htnl", "css", "js"],
+            "wife": null
+      }
+	*/
+</script>
+</body>
+</html>

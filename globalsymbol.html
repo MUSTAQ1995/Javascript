@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global Symbol</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let id = Symbol.for("id");//if the symbol did not exit,it is created
+
+	//read it again (maybe from another part of the code)
+	let idAgain = Symbol.for("id");
+
+	//the same symbol
+	alert( id === idAgain );
+</script>
+</body>
+</html>

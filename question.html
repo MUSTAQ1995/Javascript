@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asking question using the Funcction</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	function ask(question,yes,no) {
+		if (confirm(question)) yes()
+			else no();
+	}
+	/*function showOk() {
+		alert( "You Agreed");
+	}
+	function showCancel() {
+		alert( "You canceled the execution.");
+	}
+	ask("Do you agree?",showOk,showCancel);*/
+
+	ask(
+		"Do you agreee?",
+		function() {alert("You agreed."); },
+		function() {alert("You canceled the execution.");}
+	)
+</script>
+</body>
+</html>

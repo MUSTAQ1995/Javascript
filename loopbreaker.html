@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loop breaker</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let sum = 0;
+	while (true){
+		let value=+prompt("Enter the Number:",'00');
+		if(!value)break;
+		sum+=value;
+	}
+	alert('sum:'+sum)
+</script>
+</body>
+</html>

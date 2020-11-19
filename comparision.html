@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comparison By reference</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let a = {};
+	let b = a;//copy the reference
+
+	alert( a == b );//true,both variables reference the same object.
+	alert( a === b);//true
+
+	/*
+       let a = {};
+       let b = {}; //two independent objects
+
+       alert( a == b ); //false
+	*/
+</script>
+</body>
+</html>

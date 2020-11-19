@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Set Interval</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	//Syntax: let timerId = setInterval(func|code, [delay], [arg1], [arg2], ...)
+//it runs the function not only once ,but regularly after the given interval of time.
+//to stop further calls,we should call clearInterval(timerId).
+
+//The following example will show the message every 2 seconds,after 4 seconds,the output is stopped:
+let timerId = setInterval(() => alert('tick'), 2000);
+
+//after 10 seconds stop:
+setTimeout(() => { clearInterval(timerId); alert('stop'); }, 10000);
+
+</script>
+</body>
+</html>

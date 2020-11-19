@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clear Time out</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let timerId = setTimeout(() => alert("never Happens"), 1000);
+	alert(timerId);
+	clearTimeout(timerId);
+	alert(timerId)
+</script>
+</body>
+</html>

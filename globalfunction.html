@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global Function</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	function getFunc() {
+		let value = "test";
+		let func = new Function('alert(value)');
+		return func;
+	}
+	getFunc()();
+</script>
+</body>
+</html>

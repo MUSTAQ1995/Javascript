@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested Set Time Out</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	/*insted of:
+	lsst timerId = setInterval(() => alert('tick), 2000);
+	*/
+	let timerId = setTimeout(function tick(){
+		alert('tick');
+		timerId = setTimeout(tick,2000);
+	}, 2000);
+</script>
+</body>
+</html>

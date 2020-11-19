@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Logical OR operator</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let firstName="";
+	let lastName="";
+	let nickName="";
+	alert(firstName||lastName||nickName||"Anonymous");
+	// OR will chose the first truthy value from a list of variables or expressions.
+
+/*	true||alert("not printed");
+	false||alert("printed");*/
+	// "short-circuit" evaluation:means that || processes its arguments untill the first truthy value is reached,and then the expression is t=returned immediately,without even touching the other arguments.
+</script>
+</body>
+</html>

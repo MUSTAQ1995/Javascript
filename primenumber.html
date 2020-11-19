@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Numebr</title>
+</head>
+<body>
+<script type="text/javascript">
+	'use strict';
+	let n=20;
+	nextPrime:
+	for(let i = 2; i <= n; i++){
+		for (let j = 2; j < i; j++){
+			if (i%j == 0) continue nextPrime;
+		}
+		alert(i);
+	}
+</script>
+</body>
+</html>
